@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>ScrollTrack - <%= name %></title>
+	<link rel="stylesheet" href="styles/main.built.css">
+</head>
+<body class="<%= name %>">
+	<div class="nav">
+		<ul>
+			<% pages.forEach(page => { %>
+				<% if (page === name) { %>
+				<li><span><%- page %></span></li>
+				<% } else { %>
+				<li><a href="<%- page %>.html"><%- page %></a></li>
+				<% } %>
+			<% }); %>
+		</ul>
+	</div>
+
+	<%- content %>
+	<script src="scripts/<%- name %>.built.js"></script>
+</body>

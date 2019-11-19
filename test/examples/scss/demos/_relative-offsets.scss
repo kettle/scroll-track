@@ -1,0 +1,36 @@
+.relative-offsets {
+	.status {
+		box-sizing: border-box;
+		position: fixed;
+		right: -3px;
+		top: 40vh;
+		width: 20vw;
+		min-width: 20em;
+		border-radius: 3px;
+		padding: 4px 0 4px 6px;
+		border: 1px solid #fff;
+		min-height: 24px;
+		background-color: black;
+		max-height: 106px;
+		overflow-y: scroll;
+		color: white;
+		font-size: 0.75em;
+		z-index: 2;
+	}
+
+	.header {
+		background-color: #333;
+		height: 300vh;
+	}
+
+	.content {
+		background-color: #ddd;
+		height: 100vh;
+		padding: 5vh 0 0 5vh;
+	}
+
+	.footer {
+		background-color: #000;
+		height: 300vh;
+	}
+}

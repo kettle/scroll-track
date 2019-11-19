@@ -1,0 +1,83 @@
+{
+  "name": "scroll-track",
+  "version": "1.0.0",
+  "description": "Associates an event emitter with an element to broadcast its position in the viewport with respect to the scroll position of a container.",
+  "author": "Tyler Peterson <tylerjpeterson@gmail.com>",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "mkdir -p coverage && browserify test/spec/test.js -p tape-istanbul/plugin | browser-run | tape-istanbul --output coverage/coverage.json && npm run report",
+    "report": "istanbul report --root coverage lcov && open coverage/lcov-report/index.html",
+    "lint": "xo index.js gulpfile.js src/*/*.js test/**/*.js test/examples/**/*.js || true",
+    "test": "browserify -t babelify test/spec/test.js | browser-run | tap-spec",
+    "docs": "jsdoc index.js src/*/index.js -p -d docs/",
+    "watch": "gulp watch",
+    "dist": "gulp dist",
+    "demo": "gulp"
+  },
+  "dependencies": {
+    "debounce": "^1.2.0",
+    "events": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babelify": "^10.0.0",
+    "browser-run": "^6.0.0",
+    "browserify": "^16.5.0",
+    "browserify-istanbul": "^3.0.1",
+    "ejs": "^2.7.1",
+    "event-stream": "^4.0.1",
+    "glob": "^7.1.5",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "js-beautify": "^1.10.2",
+    "jsdoc": "^3.6.3",
+    "mkdirp": "^0.5.1",
+    "readable-stream": "^3.4.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0",
+    "tape-istanbul": "^1.2.0",
+    "vinyl-source-stream": "^2.0.0",
+    "xo": "^0.24.0"
+  },
+  "bugs": {
+    "url": "https://github.com/kettle/scroll-track/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kettle/scroll-track"
+  },
+  "homepage": "https://github.com/kettle/scroll-track",
+  "contributors": [
+    ""
+  ],
+  "browserslist": [
+    "defaults"
+  ],
+  "xo": {
+    "globals": [
+      "requestAnimationFrame",
+      "document",
+      "window"
+    ],
+    "rules": {
+      "promise/prefer-await-to-then": 0
+    }
+  },
+  "keywords": [
+    "scroll",
+    "track",
+    "monitor",
+    "onscroll",
+    "resize"
+  ],
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,89 @@
+.nested {
+	* {
+		box-sizing: border-box;
+	}
+
+	.screen {
+		height: 100vh;
+		width: 100vw;
+		position: relative;
+	}
+
+	.content {
+		position: absolute;
+		height: 40vh;
+		height: 24vw;
+		width: 60vw;
+		top: 30vh;
+		left: 20vw;
+		margin: auto;
+		background-color: white;
+	}
+
+	.content img {
+		width: 100%;
+	}
+
+	.one {
+		background-color: #111;
+	}
+
+	.two {
+		background-color: #222;
+	}
+
+	.three {
+		background-color: #333;
+	}
+
+	h1 {
+		margin-top: 0;
+	}
+
+	.insert-boxes-here {
+		padding: 0.25vw 0 0 0.4vw;
+		margin: 0;
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+
+	.box {
+		display: block;
+		position: relative;
+		float: left;
+		background-color: #ccc;
+		width: 5.7vw;
+		height: 5.7vw;
+		margin: 0 0.25vw 0.25vw 0;
+		line-height: 5vw;
+		text-align: center;
+		color: #fff;
+	}
+
+	.box.in {
+		background-color: #fff;
+	}
+
+	.box.partial-above {
+		background-color: #fff;
+	}
+
+	.box.partial-below {
+		background-color: #fff;
+	}
+
+	.internal {
+		height: 14vw;
+		margin: 10vh 5.9vw 10vh;
+		text-align: center;
+		background-color: #000;
+	}
+
+	.scroller {
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}

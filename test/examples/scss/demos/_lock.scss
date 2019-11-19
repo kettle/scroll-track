@@ -1,0 +1,73 @@
+.lock {
+	height: 800vh;
+
+	.container {
+		span {
+			position: absolute;
+			top: 100vh;
+			left: 0;
+			width: 10vw;
+			height: 30vh;
+			background-color: #111;
+		}
+
+		span.two {
+			left: 10vw;
+			top: 130vh;
+			background-color: #222;
+		}
+
+		span.three {
+			left: 20vw;
+			top: 160vh;
+			background-color: #333;
+		}
+
+		span.four {
+			left: 30vw;
+			top: 190vh;
+			background-color: #444;
+		}
+
+		span.five {
+			left: 40vw;
+			top: 220vh;
+			background-color: #555;
+		}
+
+		span.six {
+			left: 50vw;
+			top: 250vh;
+			background-color: #666;
+		}
+
+		span.seven {
+			left: 60vw;
+			top: 280vh;
+			background-color: #777;
+		}
+
+		span.eight {
+			left: 70vw;
+			top: 310vh;
+			background-color: #888;
+		}
+
+		span.nine {
+			left: 80vw;
+			top: 340vh;
+			background-color: #999;
+		}
+
+		span.ten {
+			left: 90vw;
+			top: 370vh;
+			background-color: #aaa;
+		}
+
+		span.fixed {
+			position: fixed;
+			top: 0;
+		}
+	}
+}

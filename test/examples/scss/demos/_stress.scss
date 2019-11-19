@@ -1,0 +1,58 @@
+.stress {
+	* {
+		color: #fff;
+	}
+
+	.center {
+		text-align: center;
+		margin: 20px;
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	#container {
+		padding-left: 0.5vw;
+	}
+
+	#container span {
+		display: inline-block;
+		background-color: #ccc;
+		width: 10.55vw;
+		height: 10vw;
+		margin-right: 0.5vw;
+		margin-bottom: 0.5vw;
+		line-height: 10vw;
+		text-align: center;
+		color: black;
+	}
+
+	#counter {
+		position: fixed;
+		font-size: 20px;
+		top: 50%;
+		left: 50%;
+		color: black;
+		text-align: center;
+
+		* {
+			color: black;
+		}
+
+		#progress_numbers {
+			font-size: 12px;
+		}
+	}
+
+	#counter > div {
+		color: black;
+		position: relative;
+		background-color: rgba(255, 255, 255, 0.9);
+		border: 3px solid black;
+		padding: 30px;
+		border-radius: 5px;
+		left: -50%;
+		top: -80px;
+	}
+}

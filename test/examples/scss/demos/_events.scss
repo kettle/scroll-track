@@ -1,0 +1,59 @@
+.events {
+	.destroy,
+	.status {
+		box-sizing: border-box;
+		position: fixed;
+		right: -3px;
+		top: 40vh;
+		width: 20vw;
+		min-width: 20em;
+		border-radius: 3px;
+		padding: 4px 0 4px 6px;
+		border: 1px solid #fff;
+		min-height: 24px;
+		background-color: black;
+		max-height: 106px;
+		overflow-y: scroll;
+		color: white;
+		font-size: 0.75em;
+		z-index: 2;
+	}
+
+	.destroy {
+		padding: 0;
+		text-transform: uppercase;
+		white-space: nowrap;
+		top: calc(40vh - 36px);
+		background-color: white;
+		line-height: 2;
+		transition: transform 0.25s ease-out 0.15s;
+
+		a {
+			padding: 3px 0 3px 6px;
+			display: block;
+			color: black;
+			text-decoration: none;
+		}
+
+		&.gone {
+			pointer-events: none;
+			transform: translateX(100%);
+		}
+	}
+
+	.header {
+		background-color: #333;
+		height: 130vh;
+	}
+
+	.content {
+		background-color: #ddd;
+		height: 150vh;
+		padding: 5vh 0 0 5vh;
+	}
+
+	.footer {
+		background-color: #000;
+		height: 50vh;
+	}
+}
