@@ -1,6 +1,6 @@
 {
   "name": "scroll-track",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Associates an event emitter with an element to broadcast its position in the viewport with respect to the scroll position of a container.",
   "author": "Tyler Peterson <tylerjpeterson@gmail.com>",
   "main": "index.js",
